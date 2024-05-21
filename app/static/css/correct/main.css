@@ -1,0 +1,102 @@
+html, body {
+    background-color: grey;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jeawoo_img {
+    width: 600px;
+    position: absolute;
+}
+
+#jw_pr_bt {
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    left: 10%;
+}
+
+#press_on {
+    width: 350px;
+    padding: 15px 20px;
+    margin: 10px 140px;
+    border: 2px solid #28a745;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    color: white;
+    background-color: #28a745;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#press_on:hover {
+    background-color: #218838;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.6);
+}
+
+#press_on:focus {
+    outline: none;
+}
+
+#main_title {
+    top: -30px;
+    position: absolute;
+    color: white;
+    font-size: 10vh;
+    z-index: 1;
+    text-shadow:
+    -2px -2px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+#press {
+    position: absolute;
+    left: 35%;
+}
+
+#press_woojea {
+    position: relative;
+    width: 750px;
+    z-index: 0;
+}
+
+#jeawoo_arms {
+    z-index: 1;
+    margin-top: 250px;
+}
+
+#pillguk {
+    position: absolute;
+    transform: scale(0.1, 0.1);
+    top: -1200px;
+    left: -1200px;
+}
+
+.press_on_pillguk {
+    animation: press_on_pillguk 5s forwards
+}
+
+.press_on_jeawoo {
+    animation: press_on_jeawoo 2s forwards
+}
+
+@keyframes press_on_pillguk {
+    0% { transform: scale(0.1,0.1);}
+    100% {transform: scale(1,0.06);}
+  }
+
+  @keyframes press_on_jeawoo {
+    0% {margin-top: 250px;}
+    50% {margin-top: 200px;}
+    100% {margin-top: 250px;}
+  }

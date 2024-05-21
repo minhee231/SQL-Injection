@@ -1,0 +1,59 @@
+html, body {
+    background-color: grey;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jeawoo_img {
+    position: absolute;
+    width: 750px;
+}
+
+#ad_jw {
+    left: 30%;
+    position: fixed;
+}
+
+#main_title {
+    top: -30px;
+    position: absolute;
+    color: white;
+    font-size: 10vh;
+    z-index: 1;
+    text-shadow:
+    -2px -2px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+#jeawo_ungood_hand {
+    position: absolute;
+    z-index: 0;
+    transform: rotateZ(0deg) rotateX(180deg);
+    top: -105px;
+}
+
+.jeawoo_hand_move {
+    animation: hand_move 1.5s forwards;
+}
+
+@keyframes hand_move {
+    0% {
+        transform: rotateZ(0deg) rotateX(180deg);
+        top: -105px;
+    }
+
+    100% {
+        transform: rotateZ(0deg) rotateX(0deg);
+        top: 0px;
+    }
+    
+}

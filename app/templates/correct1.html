@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/correct/main.css') }}">
+    <script src="{{  url_for('static', filename = 'js/correct1/main.js') }}" defer></script>
+    <title>안드로이드 재우</title>
+</head>
+<body>
+    <h1 id="main_title">끄아아아아아악!</h1>
+
+    <div id="jw_pr_bt">
+        <button id="press_on">재우 프레스 작동</button>
+    </div>
+
+    <div id="press">
+        <!-- <img id="press_woojea" src="{{url_for('static', filename = 'images/correct/press_woojea.png')}}" alt="재우 로딩 실패다."> -->
+        <img id="body_woojea" class="jeawoo_img" src="{{url_for('static', filename = 'images/correct/body_woojea.png')}}" alt="재우 로딩 실패다.">
+        <img id="jeawoo_arms" class="jeawoo_img" src="{{url_for('static', filename = 'images/correct/jeawoo_arms.png')}}" alt="재우 로딩 실패다.">
+        <img id="pillguk" src="{{url_for('static', filename = 'images/correct/pillllllguuuk.png')}}" alt="재우 로딩 실패다.">
+    </div>
+</body>
+</html>

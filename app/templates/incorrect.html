@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/incorrect/main.css') }}">
+    <script src="{{  url_for('static', filename = 'js/incorrect/main.js') }}" defer></script>
+    <title>안드로이드 재우</title>
+</head>
+<body>
+    <h1 id="main_title">흠 틀렸다고 할 수 있지</h1>
+    <div id="ad_jw">
+        <img id="jeawo_ungood_body" class="jeawoo_img" src="{{url_for('static', filename = 'images/incorrect/jeawo_ungood_body.png')}}" alt="재우 로딩 실패다.">
+        <img id="jeawo_ungood_hand" class="jeawoo_img" src="{{url_for('static', filename = 'images/incorrect/jeawo_ungood_hand.png')}}" alt="재우 로딩 실패다.">
+    </div>
+</body>
+</html>
