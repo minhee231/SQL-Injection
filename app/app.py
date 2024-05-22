@@ -49,14 +49,12 @@ def index():
     password = request.args.get('pw')  # pw 파라미터 값을 받음
     if not password:
         return render_template('index.html')
-    try:
-        res = query_db(f'select * from androidwoojea where stage=1 and password="{password}"')
-        if res and res[0]['password'] == PASSWORD["stage1"]:
-            return render_template('correct1.html')
-        elif PASSWORD["stage1"].startswith(password):
-            return "부분적으로 일치합니다."
-    except:
-        return render_template('incorrect.html')
+
+    res = query_db(f'select * from androidwoojea where stage=1 and password="{password}"')
+    if res and res['password'] == PASSWORD["stage1"]:
+        return render_template('correct1.html')
+    elif PASSWORD["stage1"].startswith(password):
+        return render_template('partial_match.html')
     return render_template('incorrect.html')
 
 if __name__ == '__main__':
