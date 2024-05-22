@@ -5,7 +5,7 @@ import string
 chars = string.ascii_letters + string.digits
 
 # 공격 대상 URL
-url = 'http://192.168.75.171:8000'
+url = 'http://43.203.18.191:134/'
 
 # 비밀번호 추측
 passwd = ''
